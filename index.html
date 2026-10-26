@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neutral Curtains × Shopify Payments</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Neutral Curtains palette, from neutralcurtains.com */
+  :root{
+    --bg:#faf6f1; --card:#ffffff; --line:#eadfd3;
+    --brown:#6a4431; --tan:#c2946a; --ink:#3d2d2d; --mut:#7a6a60;
+    --green:#108474; --greenbg:#e7f3f1;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Outfit',-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+
+  header{padding:64px 0 40px;text-align:center}
+  .tag{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--tan);margin-bottom:18px}
+  h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.02em;line-height:1.12;color:var(--brown);max-width:20ch;margin:0 auto}
+  header p{font-size:18px;color:var(--mut);max-width:52ch;margin:18px auto 0}
+
+  .hero{background:var(--brown);color:#fff;border-radius:22px;padding:44px 40px;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+  @media(max-width:720px){.hero{grid-template-columns:1fr;text-align:center;padding:34px 26px}}
+  .hero .big{font-size:clamp(72px,12vw,116px);font-weight:800;line-height:.9;letter-spacing:-.04em}
+  .hero .big-l{font-size:15px;opacity:.8;margin-top:8px}
+  .hero h2{font-size:24px;font-weight:700;margin-bottom:10px}
+  .hero p{font-size:16.5px;opacity:.9}
+
+  .nums{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+  @media(max-width:720px){.nums{grid-template-columns:1fr}}
+  .num{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 24px;text-align:center}
+  .num .n{font-size:40px;font-weight:800;letter-spacing:-.03em;color:var(--green);line-height:1}
+  .num .l{font-size:15px;font-weight:600;margin-top:10px;color:var(--ink)}
+  .num .s{font-size:13px;color:var(--mut);margin-top:4px}
+
+  section{padding:56px 0 0}
+  h3.sec{font-size:26px;font-weight:700;color:var(--brown);margin-bottom:6px}
+  .sec-sub{color:var(--mut);font-size:15.5px;margin-bottom:22px}
+
+  .chart{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 26px 14px}
+  .chart svg{width:100%;height:auto;display:block}
+
+  .total{background:var(--greenbg);border:1px solid #bfe0da;border-radius:22px;padding:40px;text-align:center}
+  .total .k{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+  .total .v{font-size:clamp(52px,9vw,80px);font-weight:800;letter-spacing:-.04em;color:var(--green);line-height:1;margin:10px 0}
+  .total .row{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin-top:18px;font-size:15px;color:var(--ink)}
+  .total .row b{color:var(--green);font-size:20px;display:block}
+
+  .list{display:grid;gap:14px}
+  .item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;display:flex;gap:18px;align-items:flex-start}
+  .item .ic{flex:none;width:42px;height:42px;border-radius:12px;background:var(--greenbg);display:grid;place-items:center;font-size:20px}
+  .item h4{font-size:17.5px;font-weight:700;margin-bottom:3px}
+  .item p{font-size:15px;color:var(--mut)}
+
+  footer{padding:52px 0 60px;text-align:center}
+  footer .by{font-size:14px;color:var(--mut)}
+  footer .disc{max-width:70ch;margin:12px auto 0;font-size:12px;color:#9a8c82;line-height:1.6}
+</style></head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="tag">Neutral Curtains × Shopify Payments</span>
+  <h1>Your customers already use Shop Pay.</h1>
+  <p>Turning on Shopify Payments lets them check out the way they already prefer, and removes the third-party fee you pay today.</p>
+</header>
+
+<div class="hero">
+  <div>
+    <div class="big">90.9%</div>
+    <div class="big-l">of your orders last month</div>
+  </div>
+  <div>
+    <h2>Nine in ten of your orders come from Shop Pay users.</h2>
+    <p>These shoppers already have their details saved with Shop Pay. Shop Pay runs on Shopify Payments, so today they can't use it on your store.</p>
+  </div>
+</div>
+
+<div class="nums">
+  <div class="num"><div class="n">$42.8K</div><div class="l">Estimated added revenue</div><div class="s">last month, from the Shop Pay checkout lift</div></div>
+  <div class="num"><div class="n" style="font-size:31px;white-space:nowrap;line-height:1.29">83.5% → 90.9%</div><div class="l">Shop Pay share is growing</div><div class="s">of your orders, over the past 12 months</div></div>
+  <div class="num"><div class="n">$0</div><div class="l">Third-party fee</div><div class="s">down from about $17K a year today</div></div>
+</div>
+
+<section>
+  <h3 class="sec">Shop Pay demand keeps growing</h3>
+  <p class="sec-sub">Share of your orders from Shop Pay users, past 12 months</p>
+  <div class="chart">
+    <svg viewBox="0 0 900 300" role="img" aria-label="Share of orders from Shop Pay users by month"><g id="ch"></g></svg>
+  </div>
+</section>
+
+<section>
+  <div class="total">
+    <div class="k">Estimated first-year value</div>
+    <div class="v">~$447K</div>
+    <div class="row">
+      <div><b>~$430K</b>added revenue</div>
+      <div><b>~$17K</b>third-party fee removed</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3 class="sec">What changes when you turn it on</h3>
+  <div class="list" style="margin-top:18px">
+    <div class="item"><div class="ic">⚡</div><div><h4>Shop Pay at checkout</h4><p>One-tap checkout for the 9 in 10 shoppers who already use it.</p></div></div>
+    <div class="item"><div class="ic">💳</div><div><h4>Pay-over-time built in</h4><p>Shop Pay Installments covers orders from $50 to $3,000, right inside Shop Pay.</p></div></div>
+    <div class="item"><div class="ic">🛡️</div><div><h4>Fraud chargeback protection</h4><p>Shopify Protect covers fraudulent chargebacks on eligible Shop Pay orders.</p></div></div>
+    <div class="item"><div class="ic">📊</div><div><h4>One place for payments</h4><p>Orders, payouts, refunds and disputes all in your Shopify admin.</p></div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="by">Prepared for <b>Neutral Curtains</b> by Shopify</div>
+  <p class="disc">Shop Pay user share and monthly revenue estimate come from Shopify's merchant view report (Oct 2025 to Oct 2026); chart values are approximate. Revenue estimates apply the 5% lower-funnel conversion lift that an independent study attributed to the presence of Shop Pay (shopify.com/enterprise/shopify-checkout) to your last 12 months of online sales (~$8.6M). The third-party fee is Shopify's 0.2% fee on orders processed outside Shopify Payments, based on your 2026 run rate. Shop Pay, Shop Pay Installments and Shopify Protect require Shopify Payments; eligibility terms apply. Estimates, not guarantees.</p>
+</footer>
+
+</div>
+<script>
+  const m=['Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'];
+  const v=[83.5,84.3,85.6,85.8,86.5,86.4,86.2,89.0,91.4,88.6,90.5,90.9];
+  const X0=56,X1=880,Y0=255,Y1=24,MIN=80,MAX=94;
+  const x=i=>X0+i*(X1-X0)/11, y=val=>Y0-(val-MIN)/(MAX-MIN)*(Y0-Y1);
+  let s='';
+  [80,84,88,92].forEach(t=>{s+=`<line x1="${X0}" x2="${X1}" y1="${y(t)}" y2="${y(t)}" stroke="#eadfd3"/><text x="${X0-10}" y="${y(t)+5}" fill="#9a8c82" font-size="14" text-anchor="end" font-family="Outfit">${t}%</text>`;});
+  m.forEach((mm,i)=>{s+=`<text x="${x(i)}" y="${Y0+28}" fill="#9a8c82" font-size="14" text-anchor="middle" font-family="Outfit">${mm}</text>`;});
+  const d=v.map((val,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(val).toFixed(1)).join(' ');
+  s+=`<path d="${d} L${X1} ${Y0} L${X0} ${Y0} Z" fill="#108474" opacity=".08"/>`;
+  s+=`<path d="${d}" fill="none" stroke="#108474" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>`;
+  v.forEach((val,i)=>{s+=`<circle cx="${x(i)}" cy="${y(val)}" r="${i===11?7:4}" fill="${i===11?'#6a4431':'#108474'}"/>`;});
+  s+=`<text x="${x(0)}" y="${y(83.5)-14}" fill="#7a6a60" font-size="15" font-weight="600" text-anchor="start" font-family="Outfit">83.5%</text>`;
+  s+=`<text x="${x(11)}" y="${y(90.9)-16}" fill="#6a4431" font-size="17" font-weight="800" text-anchor="end" font-family="Outfit">90.9%</text>`;
+  document.getElementById('ch').innerHTML=s;
+</script>
+</body></html>
