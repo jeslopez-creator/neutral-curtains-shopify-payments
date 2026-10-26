@@ -42,6 +42,18 @@
   .chart{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 26px 14px}
   .chart svg{width:100%;height:auto;display:block}
 
+  .scen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:720px){.scen-grid{grid-template-columns:1fr}}
+  .scen{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 22px;text-align:center}
+  .scen.mid{border:2px solid var(--green);box-shadow:0 10px 30px -18px rgba(16,132,116,.6)}
+  .scen .st{font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+  .scen .sp{font-size:17px;font-weight:700;margin-top:6px;color:var(--ink)}
+  .scen .sv{font-size:38px;font-weight:800;letter-spacing:-.03em;color:var(--green);margin-top:10px;line-height:1}
+  .scen.mid .sv{font-size:44px}
+  .scen .ss{font-size:13px;color:var(--mut);margin-top:4px}
+  .why{display:grid;gap:10px;margin-top:16px}
+  .why-i{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--tan);border-radius:12px;padding:14px 18px;font-size:15px;color:var(--mut)}
+  .why-i b{color:var(--ink)}
   .total{background:var(--greenbg);border:1px solid #bfe0da;border-radius:22px;padding:40px;text-align:center}
   .total .k{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
   .total .v{font-size:clamp(52px,9vw,80px);font-weight:800;letter-spacing:-.04em;color:var(--green);line-height:1;margin:10px 0}
@@ -81,7 +93,7 @@
 <div class="nums">
   <div class="num"><div class="n">$42.8K</div><div class="l">Estimated added revenue</div><div class="s">last month, from the Shop Pay checkout lift</div></div>
   <div class="num"><div class="n" style="font-size:31px;white-space:nowrap;line-height:1.29">83.5% → 90.9%</div><div class="l">Shop Pay share is growing</div><div class="s">of your orders, over the past 12 months</div></div>
-  <div class="num"><div class="n">$0</div><div class="l">Third-party fee</div><div class="s">down from about $17K a year today</div></div>
+  <div class="num"><div class="n">~$17K</div><div class="l">Paid in third-party fees every year</div><div class="s">goes to $0 on Shopify Payments</div></div>
 </div>
 
 <section>
@@ -89,6 +101,21 @@
   <p class="sec-sub">Share of your orders from Shop Pay users, past 12 months</p>
   <div class="chart">
     <svg viewBox="0 0 900 300" role="img" aria-label="Share of orders from Shop Pay users by month"><g id="ch"></g></svg>
+  </div>
+</section>
+
+<section>
+  <h3 class="sec">Where the lift comes from</h3>
+  <p class="sec-sub">Conversion lift scenarios, incremental revenue on ~$8.6M in online sales over the last 12 months</p>
+  <div class="scen-grid">
+    <div class="scen"><div class="st">Conservative</div><div class="sp">~2% lift</div><div class="sv">~$172K</div><div class="ss">a year</div></div>
+    <div class="scen mid"><div class="st">Midpoint</div><div class="sp">~5% lift</div><div class="sv">~$430K</div><div class="ss">a year</div></div>
+    <div class="scen"><div class="st">Upper</div><div class="sp">~8% lift</div><div class="sv">~$688K</div><div class="ss">a year</div></div>
+  </div>
+  <div class="why">
+    <div class="why-i"><b>Why 5% is the midpoint.</b> An independent study by a Big Three consulting firm found that the presence of Shop Pay can increase lower-funnel conversion by 5%.</div>
+    <div class="why-i"><b>Why it's conservative.</b> Shopify reports Shop Pay can lift conversion by as much as 50% compared to guest checkout, when shoppers use it.</div>
+    <div class="why-i"><b>Why it fits Neutral Curtains.</b> 90.9% of your orders already come from Shop Pay users, so the shoppers this lift applies to are already in your store.</div>
   </div>
 </section>
 
